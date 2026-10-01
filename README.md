@@ -1,122 +1,61 @@
-\# MLflow Assignment
+# MLflow Assignment
 
+## Project Overview
 
+This project demonstrates the use of **MLflow** for tracking a machine learning experiment.
 
-\## Objective
+A **Random Forest Classifier** is trained using the Iris dataset, and MLflow is used to record the model parameters, evaluation metric, and trained model.
 
+---
 
+## Objectives
 
-This project demonstrates how to use MLflow to track a machine learning experiment, including model parameters, evaluation metrics, and the trained machine learning model.
+- Train a machine learning classification model.
+- Track model parameters using MLflow.
+- Track model performance using MLflow metrics.
+- Log the trained model using MLflow.
+- View and manage experiments through the MLflow UI.
 
+---
 
+## Dataset
 
-\## Dataset
+The **Iris dataset** from Scikit-learn is used.
 
+The dataset contains measurements of iris flowers and has three classes:
 
+- Setosa
+- Versicolor
+- Virginica
 
-The Iris dataset from Scikit-learn is used for this project.
+The features used are:
 
+- Sepal length
+- Sepal width
+- Petal length
+- Petal width
 
+---
 
-The dataset contains measurements of iris flowers and three flower classes:
+## Machine Learning Model
 
+The project uses a:
 
+**Random Forest Classifier**
 
-\- Setosa
+### Model Parameters
 
-\- Versicolor
+| Parameter | Value |
+|---|---:|
+| Number of Estimators | 100 |
+| Maximum Depth | 3 |
+| Random State | 42 |
 
-\- Virginica
+---
 
-
-
-\## Machine Learning Model
-
-
-
-A Random Forest Classifier is used for classification.
-
-
-
-\### Model Parameters
-
-
-
-\- `n\_estimators = 100`
-
-\- `max\_depth = 3`
-
-\- `random\_state = 42`
-
-
-
-\## MLflow Tracking
-
-
-
-The following information is tracked using MLflow:
-
-
-
-\### Parameters
-
-
-
-\- Number of estimators
-
-\- Maximum tree depth
-
-
-
-\### Metric
-
-
-
-\- Accuracy
-
-
-
-\### Model
-
-
-
-The trained Random Forest model is logged using MLflow.
-
-
-
-\## Result
-
-
-
-The model achieved:
-
-
-
-\*\*Accuracy: 1.0000 (100%)\*\*
-
-
-
-\## Experiment
-
-
+## MLflow Tracking
 
 The MLflow experiment is named:
 
-
-
-`Iris\_MLflow\_Assignment`
-
-
-
-\## How to Run
-
-
-
-Install the required libraries:
-
-
-
-```bash
-
-pip install mlflow pandas scikit-learn
-
+```text
+Iris_MLflow_Assignment
